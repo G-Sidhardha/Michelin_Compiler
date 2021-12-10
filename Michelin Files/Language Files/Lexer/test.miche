@@ -1,0 +1,39 @@
+\* Example code file *\
+
+Ingredient ing1("Cut Pav", 2).
+Ingredient ing3("Potatoes",300).
+
+Vessel v(200).
+Bowl b(500).
+v~>add(ing3).
+v~>boil(10,60).
+b~>transfer(v).  \* returns the ingredient back to its container ?????? *\  
+
+Peeler p.
+ing3=p~>peel(ing3).
+Masher M.                \* Not sure if this is present *\
+ing3=M~>mash(ing3).
+TableSpoon tb.
+Ingredient ing2("Masala Mix",4*tb~>get_volume()).
+Ingredient ing4("Carrots",50).
+Ingredient ing5("Cauliflower",50).
+Knife k.
+ing4=k~>cut(ing4).
+ing5=k~>cut(ing5).
+Ingredient ing6("water", 50).
+v~>add(ing3).
+v~>add(ing4).
+v~>add(ing5).
+v~>add(ing6).
+v~>boil(2,60).
+v~>add(ing2).
+v~>boil_and_stir(10,60).
+
+Pan P.
+ing1=p~>toast(ing1).   \* Not sure of the function name *\
+Plate product.
+Bowl side.
+side~>add(v~>contents()).
+product~>place(ing1).
+serve(product, side).
+ready.

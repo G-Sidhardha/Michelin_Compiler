@@ -1,0 +1,8 @@
+\*Thing that doesn't make sense but does not show error while lexing.*\
+int a ====  10.	        
+float b < a-*+100.
+Glass Vessel.			\*Naming an Identifier with a keyword.*\
+Ingredient b(Water, 100, volume, Vessel).  \*Redeclaration of same variable.*\
+serve Vessel;
+ready.
+\*Not the job of lexer.*\

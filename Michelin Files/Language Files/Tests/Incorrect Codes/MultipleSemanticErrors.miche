@@ -1,0 +1,41 @@
+\* For showing function re-declaration checks. *\
+int func(int a, int b) {
+    return a+b.
+}
+
+int func(int c, int d)
+{
+    return c+d.
+}
+
+
+int main()
+{
+
+    \* For showing variable re-declaration errors. *\
+        int v = 2.
+        int v = 5.
+
+        string s = "Hi".
+    \* For showing parameter type checks, output type checks and function declaration checks, as well as checks based on number of arguments.*\
+        s = fun(s).
+        
+
+    \* For showing array based checks and expression based checks in for loop. *\
+
+    int arr[4].
+    arr[1] = "Error".
+    for(v = 0; v + 4; v = v+1){
+        arr[1] = arr[1]+1.
+    }
+    arr[5] = arr[3] + 1.
+
+
+    \* For showing scope based checks. *\
+    int dummy = 7.
+    if (arr[2] < 5)
+    {
+        int test = arr[2] + dummy.
+    }
+    test = test+1.
+}

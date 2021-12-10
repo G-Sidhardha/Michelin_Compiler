@@ -1,0 +1,13 @@
+int i = 3.
+Plate p.
+Bowl b.
+Ingredient x[i].
+x[0] = new Ingredient(“Apples”, 2, unit, p).	
+x[1] = new Ingredient(“Grapes”, 7, unit, b).
+x[2] = new Ingredient(“Berries”, 7, unit, b).
+Knife k.
+k~>cut(x[0]).		\*cuts x[0] and places back in same container*\
+b~>transfer(p).	\*transfers contents of p to b*\
+b~>mix(0.1).
+serve b.
+ready.

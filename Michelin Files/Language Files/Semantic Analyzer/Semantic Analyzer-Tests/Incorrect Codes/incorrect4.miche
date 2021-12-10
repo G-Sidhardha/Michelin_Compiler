@@ -1,0 +1,11 @@
+int kitchen()
+{
+	Glass g.
+	string itemname= 435.     \*Here the error is that variable of type string has been equated to integer.*\
+	Ingredient ing1(itemname,300,volume,g).
+	Ingredient ing2(“sugar”,2*tb->get_volume(),volume,g).
+	Ingredient ing3(“salt”, 2*tb->get_volume(),volume,g).
+	g->stir().
+
+}
+

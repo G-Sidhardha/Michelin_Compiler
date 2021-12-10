@@ -1,0 +1,28 @@
+all: clean
+	#Generating Lexer!!!
+	ocamllex L2.mll
+	ocamlyacc -v Parser_S.mly
+	ocamlc -c L2.ml
+	rm Parser_S.mli
+	ocamlc -o parse Ast.ml Semantic.ml Parser_S.ml  
+	ocamlc -o main L2.cmo 
+	#ocamlc -o parse Parser_S.cmo Ast.cmo Semantic.cmo
+	
+
+clean:
+	# Removing pre-existing executables and object files.
+	rm -f L2.cmo 
+	rm -f L2.cmi 
+	rm -f main.cmo 
+	rm -f main.cmi 
+	rm -f L2.ml 
+	rm -f main
+	rm -f Ast.cmo
+	rm -f Ast.cmi
+	rm -f Semantic.cmo
+	rm -f Semantic.cmi
+	rm -f Parser_S.ml
+	rm -f Parser_S.cmo
+	rm -f Parser_S.mli
+	rm -f Parser_S.cmi
+	rm -f Parser_S.output

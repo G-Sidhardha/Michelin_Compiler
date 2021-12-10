@@ -1,0 +1,8 @@
+Glass g.
+Ingredient ing1(“Water”, 100, volume, g).	\*100ml Water will be placed in glass g and will be called as ing1.*\
+Bowl b.
+b~>add(ing1).			\*Adds ing1 to a bowl b.*\
+b~>boil(5, 60).
+g~>transfer(b).
+serve g.
+ready.

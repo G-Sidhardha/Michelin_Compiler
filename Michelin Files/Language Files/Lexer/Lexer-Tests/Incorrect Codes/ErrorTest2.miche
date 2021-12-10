@@ -1,0 +1,8 @@
+Glass g.
+Ingredient ing1(“Water”, 60, volume, g).
+Bowl b. 
+Ingredient ing2(“Ice Cubes”,  4, unit, b). \* Comments should end. *\
+Glass g. 			  \* This is a glass of volume 120 
+g~>add(ing2).
+serve g.
+ready.

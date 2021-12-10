@@ -1,0 +1,19 @@
+int kitchen()
+{
+
+    string s = "abc".
+
+    int a = 123.
+    int b = 345.
+    int c = 678.
+    if(a > b)
+    {
+        a = a * 123.
+        c = c + 678.
+    }
+    else{
+        b = b / 345.
+        c = c + 2.
+    }
+}
+

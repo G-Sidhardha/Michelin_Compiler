@@ -1,0 +1,55 @@
+bool peel(Ingredient f) {
+        \*Something.*\
+        return true.
+}
+
+bool cut(Ingredient f) {
+        return true.
+}
+
+class foodprocessor inherits public vessel{
+        bool add(Ingredient i) {
+                return true.
+        }
+
+        bool grind(int time){
+                return true.
+        }
+
+        bool pourInto(Glass k) {
+                return true.
+        }
+}.
+
+int get_volume(TableSpoon tb) {
+        return 10.
+}
+
+int main() {
+        string a ="b".
+        Plate x = new Plate().
+        Glass g = new Glass().
+        Ingredient ing1 = new Ingredient("Apple", 2, x). 
+        Ingredient ing2 = new Ingredient("Milk", 100, g).
+        Peeler p = new Peeler().
+        bool result = peel(ing1).
+        Knife k = new Knife().
+        k~>cut(ing1).
+        foodprocessor fp = new foodprocessor().
+        fp~>add(ing1).
+
+        fp~>add(ing2).
+        int i.
+        for(i = 0; i < 3; i = i+1) {
+	        TableSpoon tb = new TableSpoon().
+                Ingredient ing = new Ingredient("Sugar",get_volume(tb),tb).
+                fp~>add(ing).
+        }
+        while(i < 10) {
+                i = i+1.
+        }
+        fp~>grind(2). 	\*Grinding for 2 minutes.*\
+        fp~>pourInto(g).
+        serve g.  
+        ready.
+}

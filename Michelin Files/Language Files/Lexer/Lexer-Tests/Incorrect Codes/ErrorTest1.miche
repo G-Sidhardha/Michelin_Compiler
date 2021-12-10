@@ -1,0 +1,8 @@
+Glass g.
+Ingredient ing1(“Water, 100, volume, g). \* Error at "Water. *\
+Bowl b.
+b~>add(ing1).
+b~>boil(5, 60).
+g~>transfer(b).
+serve g.
+ready.

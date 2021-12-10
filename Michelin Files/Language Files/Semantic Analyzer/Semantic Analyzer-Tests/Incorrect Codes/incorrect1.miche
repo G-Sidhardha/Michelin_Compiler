@@ -1,0 +1,26 @@
+recipe x(){
+	Glass g.
+	Ingredient ing[4].
+    	ing[0] = new Ingredient (“CoolWater”, 100, volume, g]).
+    	TableSpoon tb.
+    	ing[1] = new Ingredient (“Lemon juice”, 2*tb~>get_volume(), volume, g).
+    	ing[2] = new Ingredient(“Sugar”, 3*tb~>get_volume(), volume, g).
+    	ing[3] = new Ingredient(“Salt”, (tb~>get_volume())/2, volume, g).
+    	int j = 0.
+   	 while( j < 4)  {
+        	g~>add(ing[ j ]). 
+        	g~>stir(0.5).
+        	j++.
+    	}
+    	serve g.
+}
+
+int kitchen()
+{
+    for(int i = 0; i < 5; i++)
+    {
+    	\*Here lemonade function is not declared*\
+        lemonade().
+    }
+    ready.
+}

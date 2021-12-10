@@ -1,0 +1,16 @@
+int kitchen()
+{
+  Glass g.
+  Bowl b.
+  Tablespoon tb.
+  Ingredient ing1(“Milk”, 2, units, g)   \* Here milk has been declared as measured by units but it should have been volume. *
+  Ingredient ing2(“coffee powder”,2*tb->get_volume(),volume, b)
+  Vessel V.
+  V->add(ing1).
+  V->boil(3).
+  V->add(ing2).
+  V->boil(5).
+  V->stir().
+  g->add(V->contents()).
+}
+

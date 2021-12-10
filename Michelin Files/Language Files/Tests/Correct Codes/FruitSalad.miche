@@ -1,0 +1,30 @@
+class knife{
+	bool cut(Ingredient ing) {
+		return true.
+    }
+}.
+
+bool mix(Bowl b, int time) {
+	return true.
+}
+
+bool transfer(Bowl b, Plate p) {
+	return true.
+}
+
+int kitchen(int y)
+{
+    Plate p = new Plate(25).
+    Bowl b = new Bowl().
+    Ingredient x[3]<
+        x[0] = new Ingredient("Apples", 2, p).	
+        x[1] = new Ingredient("Grapes", 7, b).
+        x[2] = new Ingredient("Berries", 7, b).
+    >.
+    knife k = new knife().
+    k~>cut(x[2]).		\*cuts x[0] and places back in same container*\
+    transfer(b, p).	\*transfers contents of p to b*\
+    mix(b, 1).
+    serve b.
+    ready.
+}

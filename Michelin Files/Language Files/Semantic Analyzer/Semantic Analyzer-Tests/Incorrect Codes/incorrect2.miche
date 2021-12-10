@@ -1,0 +1,24 @@
+int kitchen(int y)
+{
+    Plate x.
+    Glass g.
+    Ingredient ing1(“Apple”, 2, unit, x). 
+    Ingredient ing2(“Milk”, 100, volume, g).
+    Peeler p.
+    ing1=p~>peel(ing1).
+    Knife k.
+    ing1=k~>cut(ing3).
+    FoodProcessor fp.
+    fp~>add(ing1).
+    fg~>add(ing4).
+    for(int i = 0; i < 3; i++) {
+	    TableSpoon tb.
+        Ingredient ing(“Sugar”, tb~>get_volume(), volume, tb).
+        fp~>add(ing).
+    }
+    fg~>grind(2). 	\*Grinding for 2 minutes*\
+    fg~>pourInto(g).
+    \*Here fg, ing3, ing4 variables are not declared*\
+    serve g.  
+    ready.
+}

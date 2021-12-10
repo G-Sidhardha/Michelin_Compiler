@@ -1,0 +1,19 @@
+int kitchen(bool a )
+{
+    if (a==True)
+    {
+        return 24.
+    }
+    else
+    {
+        return 12.
+    }
+}
+int main()
+{
+    bool a.
+    a=False
+    int res.
+    res=kitchen(a).
+    
+}

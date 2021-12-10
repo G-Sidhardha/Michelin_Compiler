@@ -1,0 +1,18 @@
+Glass g.
+Ingredient ing1(“Milk”, 100, volume, g).
+Vessel v.
+v~>add(ing1).	\*add function adds ing1 from its container(g) to v and cleans g*\ 
+v~>boil(10, 30).	\*boil for 10 minutes at 30* C*\
+TableSpoon tb.
+for(int i = 0; i < 2; i++) {
+Ingredient ing(“CoffeePowder”, tb~>get_volume(), volume, tb).
+	v~>add(ing).
+}
+for(int i = 0; i < 2; i++) {
+Ingredient ing(“Sugar”, tb~>get_volume(), volume, tb).
+	v~>add(ing).
+}
+v~>stir(20) 		\* Stir for 20 sec*\
+v~>pourInto(g).
+serve g.
+ready.

@@ -1,0 +1,26 @@
+int funct(int a , int b) {
+    return a.
+}
+
+class base{
+    int c.
+    int kitch(int d,int e){
+        return d.
+    }
+}.
+
+class derived inherits public base{
+    int f.
+    int do_nothing(){
+        return 0.
+    }
+}.
+
+int main() {
+    string var = "1".
+    int t = 0.
+    int y.
+    t = funct(t,var).
+    base try = new base().
+    int z = try~>kitc(t, t).
+}

@@ -1,0 +1,13 @@
+Bowl b.
+plate p1, p2.
+Ingredient x("Apples", @2, p1).	\*Signs like @, $ are neither used nor allowed.*\
+Ingredient y("Grapes", 7, b).
+Ingredients z("Bananas", 1, p2).
+Knife k.
+x = k~>cut(x).
+z = k~>cut(z).
+b~>add(x).
+b~>add(z). 
+b~>mix(0.2).
+serve b.
+ready.

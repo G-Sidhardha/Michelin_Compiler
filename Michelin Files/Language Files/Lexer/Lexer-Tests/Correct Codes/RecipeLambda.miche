@@ -1,0 +1,22 @@
+recipe x{
+	Glass g.
+	ingredient ing[4].
+Ing[0] = new Ingredient (“CoolWater”, 100, volume, g).
+TableSpoon tb.
+for(int i = 0; i < 2; i++) {
+	ingredient ing(“Lemon juice”, tb~>get_volume(), volume, tb)
+	g~>add(ing).
+}
+for(int i = 0; i < 3; i++) {
+	ingredient ing(“Sugar”, tb~>get_volume(), volume, tb)
+	g~>add(ing).
+}
+ingredient ing(“Salt”, tb~>get_volume())/2,volume,  tb)
+g~>add(ing).
+g~>stir(0.5).
+serve g.
+}
+
+for(int i = 0; i < 4; i++) {
+	x. // Recipe is somewhat similar to C++'s lambda. We intend to use it as a inline function as well (have not fully thought about it).
+}
